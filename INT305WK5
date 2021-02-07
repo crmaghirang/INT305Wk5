@@ -1,0 +1,41 @@
+//
+//  ContentView.swift
+//  Local Shopper
+//
+//  Created by Christian Maghirang on 2/2/21.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+    TabView {
+            Text("Search")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+            }
+            Text("User Profile")
+                .tabItem {
+                    Image(systemName: "person.circle.fill")
+                    Text("Me")
+            }
+            Text("Saved Searches")
+                .tabItem {
+                    Image(systemName: "heart.fill")
+                    Text("Saved")
+            }
+            Text("More")
+                .tabItem {
+                    Image(systemName: "ellipsis")
+                    Text("More")
+            }
+        }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+}
